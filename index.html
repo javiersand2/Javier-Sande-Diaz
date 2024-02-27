@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="style.css">
+<header class="banner">
+    <div class="container_16">
+      <hgroup>
+        <h1 class="fadeInDown">Javier Sande Diaz</h1>
+        <h2 class="fadeInUp">Curriculum</h2>
+      </hgroup>
+    </div>
+  </header>
+  
+  <section role="main" class="container_16">
+    <div class="grid_16">
+      <!-- About me -->
+      <div class="grid_8 fadeInLeft">
+        <img class="icon" src="https://i.imgur.com/8msw88z.png" alt="sobre mí">
+        <h3>Sobre mí</h3>
+        <p>Mi nombre es Javier Sande y soy estudiante de diseño de aplicaciones web.</p>
+        <p>Actualmente soy estudiante de desarrollador web. Si estás interesado en el desarrollo de cualquier aplicación para dispositivos móviles o web puedes contactar conmigo, ya seas una empresa o profesional. Seguro que juntos podremos poner en marcha el proyecto que tienes en mente.</p><p>¡Un saludo!</p>
+      </div>
+  
+      <div class="grid_8 knowledge fadeInRight">
+        <img class="icon" src="https://i.imgur.com/x1sZUlS.png" alt="Conocimientos">
+        <h3>Conocimientos</h3>
+        <ul class="values">
+          <li>HTML5<span style="width: 90%;"></span></li>
+          <li>CSS<span style="width: 85%;"></span></li>
+          <li>Javascript<span style="width: 80%;"></span></li>
+          <li>SQL<span style="width: 80%;"></span></li>
+          <li>Java<span style="width: 95%;"></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid_16 experiences appear">
+      <img class="icon" src="https://i.imgur.com/gIXe1cf.png" alt="Experiencias">
+      <h3>Experiencias</h3>
+      <ul>
+         <li>
+          <h4><strong>Sin Experiencia</strong></h4>
+          <span class="date">2023 - Actualmente</span>
+          <p>desarrollo de paginas web simulando Spotify (no esta muy bien pero es practica)</p>
+        </li>
+      </ul>
+    </div>
+  
+
+    <div class="grid_16 training appear">
+      <img class="icon" src="https://i.imgur.com/mTJKfOj.png" alt="sobre mí">
+      <h3>Formación</h3>
+      <div class="formation1">
+      <ul>
+        <li>
+          <h4><strong>Terminando DAW</strong></h4>
+          <span class="site">desarrollo de aplicaciones web</span>
+          <span class="date">2023-2024</span>
+        </li>
+      </ul>
+      </div>
+    </div>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="nombre">Indica tu nombre</label>
+          <input type="text" id="nombre"><br>
+          <label for="telefono">Indica tu telefono</label>
+          <input type="text" id="telefono"><br>
+          <label for="correo">Indica tu correo</label>
+          <input type="text" id="correo"><br>
+          <textarea for="texto" id="texto"placeholder="alguna sugerencia?"></textarea>
+      </fieldset>
+      <input type="submit" value="Enviar" onclick="mostrarDatos()"/>
+        <input type="reset" value="Limpiar"/>
+      </form>
+      <script type="text/javascript">
+       function mostrarDatos(){
+        var nombre=document.getElementById("nombre").value;
+        var telefono=document.getElementById("telefono").value;
+        var correo=document.getElementById("correo").value;
+        var texto=document.getElementById("texto").value;
+        var pop="su nombre:"+nombre+"\n"+"su telefono:"+telefono+"\n"+"su correo:"+correo+"\n"+"sus sugerencias:"+texto;
+        alert(pop)
+      }
+      </script>
+  </section>
